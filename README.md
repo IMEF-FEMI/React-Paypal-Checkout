@@ -2,7 +2,7 @@
 
 
 ## Medium post that details this repo
-* [How to add PayPal checkout to your React App](/how-to-add-paypal-checkout-to-your-react-app-37d44c58a896)
+* [How to add PayPal checkout to your React App](https://medium.com/@bolajifemi28/how-to-add-paypal-checkout-to-your-react-app-37d44c58a896)
 
 ## Getting Started
 
