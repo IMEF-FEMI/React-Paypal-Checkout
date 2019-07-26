@@ -4,15 +4,13 @@ import scriptLoader from "react-async-script-loader";
 import Car from "../assets/img/car.jpg";
 import Spinner from "./Spinner";
 
-// const CLIENT = {
-//   sandbox:
-//     "",
-//   production:
-//     ""
-// };
+const CLIENT = {
+  sandbox:"your sandbox id",
+  production:"your client id"
+};
 
-// const CLIENT_ID =
-//   process.env.NODE_ENV === "production" ? CLIENT.production : CLIENT.sandbox;
+const CLIENT_ID =
+  process.env.NODE_ENV === "production" ? CLIENT.production : CLIENT.sandbox;
 
 let PayPalButton = null;
 class PaypalButton extends React.Component {
@@ -118,7 +116,4 @@ class PaypalButton extends React.Component {
   }
 }
 
-export default scriptLoader(
-  `https://www.paypal.com/sdk/js?client-id=AZ42Vzic_sZc6kiyVvrsvORgD81cQkRSIVryHtvqCNmq7z3pSZSiHWyCeIf0Ls2ZCLlfSCNS3EKlSLiy`
-)(PaypalButton);
-// export default scriptLoader(`https://www.paypal.com/sdk/js?client-id=${CLIENT_ID}`)(PaypalButton);
+export default scriptLoader(`https://www.paypal.com/sdk/js?client-id=${CLIENT_ID}`)(PaypalButton);
